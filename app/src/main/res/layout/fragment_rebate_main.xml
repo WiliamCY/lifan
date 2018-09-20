@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/file_mian_call"
+        layout="@layout/file_toolbar"/>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_below="@id/file_mian_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <View
+        android:layout_height="1dp"
+        android:layout_width="fill_parent"
+        android:background="#cccccc"/>
+    <include
+     android:layout_height="100dp"
+     android:layout_width="match_parent"
+     layout="@layout/rebate_tab1"/>
+
+        <include
+            layout="@layout/rebate_tab2"
+            android:layout_width="wrap_content"
+            android:layout_height="280dp" />
+    <View
+        android:layout_height="1dp"
+        android:layout_width="fill_parent"
+        android:background="#cccccc"/>
+  <android.support.v7.widget.RecyclerView
+      android:id="@+id/rv"
+      android:paddingBottom="30dp"
+      android:layout_width="match_parent"
+      android:layout_height="320dp"/>
+        <include
+            android:id="@+id/rebate_4"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            layout="@layout/rebate_tab4"/>
+
+
+    </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/rebate_message_button"/>
+</RelativeLayout>

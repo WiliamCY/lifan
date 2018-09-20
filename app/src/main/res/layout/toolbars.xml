@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+<android.support.v7.widget.Toolbar
+    android:fitsSystemWindows = "true"
+    android:id="@+id/toolbar"
+    android:background="@drawable/tabbg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       <TextView
+           android:paddingTop="10dp"
+           android:id="@+id/toolbar_title"
+           android:gravity="center"
+           android:text="提现"
+           android:textSize="20sp"
+           android:textColor="#ffffff"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent" />
+
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

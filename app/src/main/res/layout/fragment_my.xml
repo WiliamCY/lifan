@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F0F0F0"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/my_messages"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingTop="5dp"
+
+               >
+                <ImageView
+                    android:id="@+id/my_image"
+                   android:layout_margin="3dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/my_head"/>
+
+
+                <TextView
+                    android:id="@+id/my_id"
+                    android:paddingTop="5dp"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/my_image"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18751489263"/>
+
+                <ImageView
+                    android:id="@+id/my_news"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/my_message" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/my_moneys"
+                android:layout_below="@+id/my_messages"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/h1"
+                    android:paddingTop="30dp"
+                    android:layout_gravity="center"
+                    android:text="总资产（元）"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/my_totalMoney"
+                    android:textColor="#FF7F24"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:textSize="30sp"/>
+                <LinearLayout
+                    android:paddingTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="冻结金额（元）"/>
+                        <TextView
+                            android:id="@+id/my_BlockedFund"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="累计收益（元）"/>
+                        <TextView
+                            android:id="@+id/my_AccumulativeIncome"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/Withdraw"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="可提现（元）"/>
+                        <TextView
+                            android:id="@+id/my_presented"
+                            android:textColor="#FF7F24"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/my_view1"
+                android:layout_below="@+id/my_moneys"
+                android:layout_height="3dp"
+                android:layout_width="fill_parent"
+                android:background="#F0F0F0"/>
+
+            <include
+
+                android:id="@+id/gridview"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                layout="@layout/my_gridview"/>
+
+
+            <View
+                android:id="@+id/my_view2"
+                android:layout_below="@+id/gridview"
+                android:layout_height="8dp"
+                android:layout_width="fill_parent"
+                android:background="#F0F0F0"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:orientation="vertical">
+<ImageView
+    android:id="@+id/infomation_image"
+    android:layout_width="match_parent"
+    android:layout_height="100dp" />
+<TextView
+    android:id="@+id/infomation_h1"
+    android:textSize="18sp"
+    app:layout_marginTopPercent="3%"
+    app:layout_marginLeftPercent="3%"
+    android:textColor="#0A0A0A"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="股价倒挂定增配无望"/>
+
+    <TextView
+        android:id="@+id/infomation_h2"
+        app:layout_marginTopPercent="1%"
+        app:layout_marginLeftPercent="3%"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加手机分手就分手都怕hi京东派色粉技术附件屁哦豆阿里客服搜规矩话安慰道空间给别人及电瓶安慰；了解到国际..."/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        app:layout_marginBottomPercent="2%"
+        app:layout_marginTopPercent="4%"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/commentView1"
+        android:layout_below="@+id/commend_h2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            app:layout_marginLeftPercent="4%"
+            android:layout_gravity="center"
+            android:id="@+id/comment_see_background"
+            android:background="@mipmap/comment_see_background"
+            android:layout_width="20dp"
+            android:layout_height="12dp" />
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/infomation_h3"
+            android:layout_gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8888"/>
+        <TextView
+            android:textSize="12sp"
+            android:layout_gravity="bottom"
+            android:id="@+id/infomation_h4"
+           android:paddingLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10小时以前"/>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_below="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+        <View
+            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:background="#EAEAEA"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <include
+
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/file_mian_briefs"
+        layout="@layout/file_toolbar"/>
+    <View
+        android:id="@+id/my_view1"
+        android:layout_height="0.1dp"
+        android:layout_width="fill_parent"
+        android:background="#D3D3D3"/>
+
+    <TextView
+       android:layout_margin="5dp"
+        android:textColor="#0A0A0A"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="公司简介"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/cc"
+        android:layout_marginLeft="5dp"
+     android:layout_marginRight="5dp"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="      1999年11月，QQ用户注册数达100万。
+2000年4月，QQ用户注册数达500万。
+2000年6月，QQ注册用户数破千万，“移动QQ”进入联通“移动新生活”。
+2001年1月31日，NetValue宣布了亚洲五个国家和地区的互联网网站及实体的排名，包括中国香港特区、韩国、新加坡、中国台湾地区和中国大陆的数据，腾讯网在中国排名第6。
+2001年2月，腾讯QQ注册用户数已增至5000万用户。2003年12月，腾讯一款最新的即时通讯软件——Tencent Messenger（简称腾讯TM）对外发布，提供办公环境中和熟识朋友即时沟通的网友下载使用。
+（以上参考资料： [9]  ）
+2004年4月，QQ注册用户数再创高峰，突破3亿大关。
+2004年6月16日，腾讯控股在香港联合交易所主板正式挂牌，股份代号700。是第一家在香港主板上市的中国互联网企业。腾讯公司在香港联交所主板公开上市（股票代号00700），是香港恒生指数成分股之一，董事会主席兼首席执行官是马化腾。
+2004年8月27日，腾讯QQ游戏的最高同时在线突破了62万人。标志着QQ游戏成为国内最大和世界领先的休闲游戏门户。2007年4月26日，“腾讯”、“Tencent” 商标成为广东省著名商标。
+2007年10月15日，第一家由国内互联网企业自主建立的研究机构——腾讯研究院正式挂牌成立。
+2009年2月9日，QQ空间的月登陆帐户数突破2亿，继续保持了全球最大互联网社交网络社区的地位。
+2009年3月，手机QQ空间同时在线突破200万。同时腾讯正式取得国家级高新技术企业证书。
+2009年4月25日，腾讯公司的字母“QQ”商标被国家工商行政管理总局认定为驰名商标。
+2009年7月，腾讯公司授权专利总数突破400项，成为全球互联网拥有专利数量最多的企业之一，比肩Google、Yahoo、Aol"/>
+    </ScrollView>
+</LinearLayout>

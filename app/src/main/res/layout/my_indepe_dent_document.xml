@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="#E5E5E5"
+ >
+
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/my_documnet_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/documnet_background">
+            <ImageView
+                app:layout_marginTopPercent="8%"
+                app:layout_marginPercent="2%"
+                android:id="@+id/documet_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@mipmap/my_logo_background"/>
+            <com.zhy.android.percent.support.PercentLinearLayout
+                app:layout_marginTopPercent="8%"
+                app:layout_marginLeftPercent="4%"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/documet_image">
+                <TextView
+                    app:layout_marginPercent="2%"
+                    android:id="@+id/documet_title"
+                    android:layout_toRightOf="@id/documet_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="17返利"/>
+                <TextView
+                    android:id="@+id/documet_money"
+                    app:layout_marginTopPercent="3%"
+                    android:layout_below="@id/documet_title"
+                    android:layout_toRightOf="@id/documet_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="投资金额 5000000元"/>
+
+                <TextView
+                    android:id="@+id/documet_time"
+                    app:layout_marginTopPercent="1%"
+                    android:layout_below="@id/documet_money"
+                    android:layout_toRightOf="@id/documet_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="投资时间 2017.3.12"/>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+            <ImageView
+                android:id="@+id/document_status"
+                app:layout_marginRightPercent="2%"
+                android:layout_alignParentRight="true"
+                android:layout_width="40dp"
+                android:layout_height="80dp"
+                />
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/docuemt_layout"
+                android:layout_below="@id/documet_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_weight="8"
+                    android:id="@+id/documet_times"
+                    app:layout_marginPercent="1%"
+                    app:layout_marginLeftPercent="2%"
+                    android:layout_below="@id/documet_image"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="提交时间2017.2.23  10:20"/>
+
+
+
+                <ImageView
+                    android:id="@+id/document_delete"
+                    app:layout_marginPercent="1%"
+                    app:layout_marginBottomPercent="1%"
+                    app:layout_marginRightPercent="2%"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@mipmap/document_delete"/>
+                <ImageView
+                    android:id="@+id/documet_fix"
+                    app:layout_marginPercent="1%"
+                    app:layout_marginRightPercent="2%"
+                    android:layout_toRightOf="@id/documet_title"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@mipmap/document_fix"/>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

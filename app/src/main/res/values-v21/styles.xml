@@ -1,0 +1,14 @@
+<resources>
+    <style name="TransparentBarStyle"  parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <!--把该属性改为false即可使menu位置位于toolbar之下-->
+        <item name="overlapAnchor">false</item>
+        <!--设置右上角三个圆点的颜色-->
+        <item name="android:textColorSecondary">#ffffff</item>
+    </style>
+</resources>

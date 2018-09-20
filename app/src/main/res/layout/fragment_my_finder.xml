@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="wrap_content">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+ <com.zhy.android.percent.support.PercentLinearLayout
+
+     android:id="@+id/my_finder_lauyout"
+     android:layout_width="match_parent"
+     android:layout_height="0dp"
+     app:layout_heightPercent="57%w"
+     android:background="@drawable/my_finder_background"
+     android:orientation="vertical">
+
+     <ImageView
+         android:id="@+id/my_finder_back"
+         app:layout_marginTopPercent="13%"
+         app:layout_marginPercent="3%"
+         android:layout_width="20dp"
+         android:layout_height="20dp"
+         android:background="@mipmap/ic_back_white"/>
+     <com.zhy.android.percent.support.PercentLinearLayout
+         app:layout_marginTopPercent="3%"
+         android:gravity="right"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <ImageView
+             app:layout_marginRightPercent="1%"
+             android:layout_width="27dp"
+             android:layout_height="27dp"
+             android:background="@mipmap/my_finder_finder"/>
+ <TextView
+     android:layout_gravity="bottom"
+     app:layout_marginRightPercent="18%"
+     android:textColor="#ffffff"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="邀请人数"/>
+     </com.zhy.android.percent.support.PercentLinearLayout>
+     <com.zhy.android.percent.support.PercentLinearLayout
+         app:layout_marginRightPercent="10%"
+         app:layout_marginTopPercent="3%"
+         android:gravity="right"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <TextView
+
+             android:textColor="#0A0A0A"
+             android:textStyle="bold"
+             android:textSize="23sp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="12"/>
+
+         <TextView
+             android:textColor="#ffffff"
+             android:textSize="13sp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="人"/>
+
+     </com.zhy.android.percent.support.PercentLinearLayout>
+
+     <com.zhy.android.percent.support.PercentLinearLayout
+         app:layout_marginTopPercent="1%"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <TextView
+             android:textColor="#FF7F24"
+             android:textStyle="bold"
+             app:layout_marginLeftPercent="12%"
+             android:textSize="25sp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="500"/>
+         <TextView
+             android:textSize="13sp"
+             app:layout_marginLeftPercent="1%"
+             android:textColor="#ffffff"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="元"/>
+
+     </com.zhy.android.percent.support.PercentLinearLayout>
+     <com.zhy.android.percent.support.PercentLinearLayout
+         app:layout_marginTopPercent="2%"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <ImageView
+             app:layout_marginLeftPercent="5%"
+             android:layout_width="30dp"
+             android:layout_height="30dp"
+             android:background="@mipmap/my_finder_money"/>
+ <TextView
+     app:layout_marginLeftPercent="1%"
+     android:textColor="#ffffff"
+     android:layout_gravity="bottom"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="获取邀请金额"/>
+
+     </com.zhy.android.percent.support.PercentLinearLayout>
+ </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:descendantFocusability="blocksDescendants"
+        android:layout_below="@+id/my_finder_lauyout"
+        android:id="@+id/my_finder_recyview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    </ScrollView>
+</com.zhy.android.percent.support.PercentRelativeLayout>

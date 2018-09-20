@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#F0F0F0">
+  <include
+      app:layout_heightPercent="17%w"
+      android:layout_width="wrap_content"
+      android:layout_height="0dp"
+      android:id="@+id/my_bank_toolbar"
+      layout="@layout/toolba_bank"/>
+
+
+    <android.support.v7.widget.CardView
+     android:visibility="gone"
+        android:id="@+id/back_add_card"
+        app:cardElevation="10dp"
+        app:contentPadding="16dp"
+        android:layout_below="@+id/my_bank_toolbar"
+        app:layout_marginTopPercent="2%"
+        app:layout_marginPercent="4%"
+        app:layout_heightPercent="35%w"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#6495ED"
+       >
+<com.zhy.android.percent.support.PercentRelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/bank_card_logo"
+            app:layout_marginTopPercent="4%"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/my_bank_logo"/>
+   <ImageView
+       android:layout_alignParentRight="true"
+       android:layout_width="20dp"
+       android:layout_height="20dp"
+       android:background="@mipmap/my_back_add_delete"/>\
+    <TextView
+        android:id="@+id/bank_card_id"
+        android:textColor="#ffffff"
+        android:text="中 国 建 设 银 行"
+        android:textSize="15sp"
+        app:layout_marginTopPercent="5%"
+        app:layout_marginLeftPercent="2%"
+        android:layout_toRightOf="@+id/bank_card_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_below="@id/bank_card_id"
+        android:id="@+id/bank_card_type"
+        android:textColor="#ffffff"
+        android:text="xx支行"
+        app:layout_marginTopPercent="10%"
+        app:layout_marginLeftPercent="2%"
+        android:layout_toRightOf="@+id/bank_card_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+<com.zhy.android.percent.support.PercentLinearLayout
+    android:layout_below="@id/bank_card_type"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    app:layout_marginTopPercent="17%"
+    app:layout_marginLeftPercent="2%"
+    android:layout_toRightOf="@+id/bank_card_logo">
+
+    <TextView
+        android:id="@+id/back_number_1"
+        android:textColor="#ffffff"
+        android:text="* * * *"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        app:layout_marginLeftPercent="13%"
+        android:id="@+id/back_number_2"
+        android:textColor="#ffffff"
+        android:text="* * * *"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        app:layout_marginLeftPercent="13%"
+        android:id="@+id/back_number_3"
+        android:textColor="#ffffff"
+        android:text="* * * *"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        app:layout_marginLeftPercent="13%"
+        android:id="@+id/back_number_4"
+        android:textColor="#ffffff"
+        android:text="2 5 6 3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/about_alipay"
+android:visibility="gone"
+        app:cardElevation="10dp"
+        app:contentPadding="16dp"
+        android:layout_below="@+id/my_bank_toolbar"
+        app:layout_marginTopPercent="2%"
+        app:layout_marginPercent="4%"
+        app:layout_heightPercent="25%w"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#FF8C69"
+        >
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/bank_card_logo_alppay"
+                app:layout_marginTopPercent="4%"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/my_bank_logo"/>
+            <TextView
+                android:textColor="#ffffff"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="修改"/>
+            <TextView
+                android:id="@+id/bank_card_id_alipay"
+                android:textColor="#ffffff"
+                android:text="作曲家"
+                android:textSize="15sp"
+                app:layout_marginTopPercent="5%"
+                app:layout_marginLeftPercent="5%"
+                android:layout_toRightOf="@+id/bank_card_logo_alppay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/alipay_account"
+                android:layout_below="@id/bank_card_id_alipay"
+                android:textColor="#ffffff"
+                android:text="13888888888"
+                app:layout_marginTopPercent="10%"
+                app:layout_marginLeftPercent="5%"
+                android:layout_toRightOf="@+id/bank_card_logo_alppay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_below="@id/bank_card_type"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_marginTopPercent="17%"
+                app:layout_marginLeftPercent="2%"
+                android:layout_toRightOf="@+id/bank_card_logo">
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+    </android.support.v7.widget.CardView>
+
+<com.zhy.android.percent.support.PercentLinearLayout
+    android:id="@+id/my_bank_add_cards"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    app:layout_heightPercent="10%w"
+    app:layout_marginBottomPercent="1%"
+    android:background="#D4D4D4"
+    >
+   <ImageView
+       android:id="@+id/my_bank_add_card"
+       app:layout_marginLeftPercent="3%"
+       app:layout_marginPercent="1%"
+       android:layout_width="30dp"
+       android:layout_height="30dp"
+       android:background="@mipmap/my_bank_add"/>
+    <TextView
+        android:id="@+id/view_aall"
+        app:layout_marginLeftPercent="3%"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="添加银行卡"/>
+</com.zhy.android.percent.support.PercentLinearLayout>
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/add_alipay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%w"
+        android:layout_below="@+id/my_bank_add_cards"
+        android:background="#D4D4D4"
+        >
+        <ImageView
+            android:id="@+id/my_bank_add_card_alipay"
+            app:layout_marginLeftPercent="3%"
+            app:layout_marginPercent="1%"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/my_bank_add"/>
+        <TextView
+            app:layout_marginLeftPercent="3%"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="添加支付宝"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    <include
+        android:visibility="gone"
+        android:id="@+id/bank_view1"
+        android:layout_below="@+id/my_bank_add_cards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/add_bank_message"/>
+    <include
+        android:visibility="gone"
+        android:id="@+id/bank_view2"
+        android:layout_below="@+id/my_bank_add_cards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/add_bank_message_alpay"/>
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:visibility="gone"
+        android:id="@+id/bank_message"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%w"
+        >
+        <ImageView
+            app:layout_marginTopPercent="30%"
+            app:layout_marginLeftPercent="3%"
+            app:layout_marginPercent="1%"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@mipmap/my_bank_woring"/>
+        <TextView
+            android:id="@+id/bank_messages"
+            android:layout_gravity="center"
+            android:textColor="#FF7F24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="只能添加一张银行卡"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

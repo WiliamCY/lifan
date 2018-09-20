@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<ImageView
+    android:id="@+id/file_ceo_logo"
+    app:layout_marginPercent="3%"
+    android:layout_width="70dp"
+    android:layout_height="90dp" />
+<TextView
+    android:id="@+id/file_ceo_name"
+    android:textStyle="bold"
+    android:textSize="18sp"
+    android:textColor="#0a0a0a"
+    app:layout_marginTopPercent="2%"
+    app:layout_marginLeftPercent="1%"
+    android:layout_toRightOf="@+id/file_ceo_logo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="马化腾"/>
+
+    <TextView
+        app:layout_marginLeftPercent="3%"
+        android:id="@+id/file_ceo_job"
+        android:textSize="12sp"
+        android:layout_below="@+id/file_ceo_name"
+        android:layout_toRightOf="@+id/file_ceo_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="卖盗版"/>
+
+
+    <TextView
+        app:layout_marginLeftPercent="1%"
+        app:layout_marginBottomPercent="4%"
+        android:textColor="#0a0a0a"
+        app:layout_marginTopPercent="1%"
+        android:id="@+id/file_ceo_message"
+        android:textSize="12sp"
+        android:layout_below="@+id/file_ceo_job"
+        android:layout_toRightOf="@+id/file_ceo_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="马化腾，男，1971年10月29日生于广东省汕头市潮南区。腾讯公司主要创办人之一。现任腾讯公司控股董事会主席兼首席执行官；全国青联副主席。马化腾曾在深圳大学主修计算机及应用，于1993年取得深大理科学士学位。在创办腾讯之前，马化腾曾在中国电信服务和产品供应商深圳润迅通讯发展有限公司主管互联网传呼系统的研究开发工作，在电信及互联网行业拥有10多年经验。"/>
+    <View
+        android:layout_below="@+id/file_ceo_message"
+        android:layout_height="5dp"
+        android:layout_width="fill_parent"
+        android:background="#CCCCCC"/>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

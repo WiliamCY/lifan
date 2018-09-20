@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.qqche.cy">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <application
+        android:testOnly="false"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/TransparentBarStyle">
+        <activity android:name=".Login.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login.RegisterActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Login.ForgetActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Main.MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FragmentRebate.FragmentRebateMain"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FragmentRebate.FragmentRebateMessage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FragmentFiles.FragmentFileMain"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FragmentFiles.FragmentFileMain"
+            tools:ignore="DuplicateActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FragmentFiles.FragmentCEO"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FragmentFiles.FragmentMainGS"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FragmentFiles.FragmentMainPY"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FragmentFiles.FragmentFileMainHonor"
+            android:screenOrientation="portrait"/>
+         <activity android:name=".FragmentFiles.FragmentFileMainCall"
+             android:screenOrientation="portrait"/>
+        <activity android:name=".FragmentFiles.FragmentFileMainBrief"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FragmenyMyS.FragmentUserMessage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FragmenyMyS.FragmentUserSetting"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FragmenyMyS.FragmentMyFinder"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FragmenyMyS.FragmentBankWi"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FragmenyMyS.FragmentBankAdd"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FragmenyMyS.FragmentMyInvest"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FragmenyMyS.FragmentMyTenderRecord"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FragmenyMyS.FragmentMyIndepeDentdocument"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FragmenyMyS.FragmentCapitalRecord"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FragmenyMyS.FragmetnTimeAxis"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FragmentDocument.FragmentDocuemntOne"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FragmentDocument.FragmentDocuemntTwo"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FragmentDocument.FragmentDocuemntThree"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".WebView.CommentNotic"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".WebView.MZBannerWebView"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FragmenyMyS.FragmentFixPwd"
+            android:screenOrientation="portrait"/>
+      <activity android:name=".FragmenyMyS.FramgnetBankWiS"
+          android:screenOrientation="portrait"/>
+        <activity android:name=".FragmenyMyS.FragmentFillintheform"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FragmenyMyS.FragmentAlipay"
+            android:screenOrientation="portrait"/>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.qqche.cy.FragmenyMyS.FragmentFillintheform"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+        <meta-data
+            android:name="channeltest"
+            android:value="1"/>
+    </application>
+
+</manifest>

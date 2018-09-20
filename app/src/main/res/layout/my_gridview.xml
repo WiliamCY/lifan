@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <com.zhy.android.percent.support.PercentRelativeLayout
+      android:id="@+id/my_capital_record"
+      android:layout_width="match_parent"
+      android:gravity="center"
+      android:layout_height="45dp">
+
+      <ImageView
+          android:id="@+id/my_image_1"
+          app:layout_marginLeftPercent="3%"
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:background="@mipmap/my_capital_record"/>
+  <TextView
+      android:layout_toRightOf = "@id/my_image_1"
+      app:layout_marginLeftPercent="3%"
+      android:textSize="16sp"
+      android:textColor="#0A0A0A"
+      android:text="资金记录"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+      <TextView
+          android:textSize="12sp"
+          app:layout_marginTopPercent="12%"
+          android:layout_toLeftOf="@id/ic_my_back"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="查看资金明细"/>
+      <ImageView
+          app:layout_marginTopPercent="15%"
+          app:layout_marginRightPercent="1%"
+          android:id="@+id/ic_my_back"
+          android:layout_alignParentRight="true"
+          android:background="@mipmap/my_main_into"
+          android:layout_width="13dp"
+          android:layout_height="13dp" />
+  </com.zhy.android.percent.support.PercentRelativeLayout>
+    <View
+        android:layout_height="1dp"
+        android:layout_width="fill_parent"
+        android:background="#F0F0F0"/>
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:id="@+id/ny_tender_record"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/my_image_2"
+            app:layout_marginLeftPercent="3%"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@mipmap/ny_tender_record"/>
+        <TextView
+            android:layout_toRightOf = "@id/my_image_2"
+            app:layout_marginLeftPercent="3%"
+            android:textSize="16sp"
+            android:textColor="#0A0A0A"
+            android:text="投标记录"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/invest_recently"
+            android:textSize="12sp"
+            app:layout_marginTopPercent="12%"
+            android:layout_toLeftOf="@id/ic_my_back2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/orgin"/>
+        <ImageView
+            app:layout_marginTopPercent="15%"
+            app:layout_marginRightPercent="1%"
+            android:id="@+id/ic_my_back2"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/my_main_into"
+            android:layout_width="13dp"
+            android:layout_height="13dp" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <View
+        android:layout_height="1dp"
+        android:layout_width="fill_parent"
+        android:background="#F0F0F0"/>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/my_indepe_dent_document"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/my_image_3"
+            app:layout_marginLeftPercent="3%"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@mipmap/my_indepe_dent_document"/>
+        <TextView
+
+            android:layout_toRightOf = "@id/my_image_3"
+            app:layout_marginLeftPercent="3%"
+            android:textSize="16sp"
+            android:textColor="#0A0A0A"
+            android:text="交单记录"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="12sp"
+            app:layout_marginTopPercent="12%"
+            android:layout_toLeftOf="@id/ic_my_back3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="审核一笔"/>
+        <ImageView
+            app:layout_marginTopPercent="15%"
+            app:layout_marginRightPercent="1%"
+            android:id="@+id/ic_my_back3"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/my_main_into"
+            android:layout_width="13dp"
+            android:layout_height="13dp" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <View
+        android:layout_height="4dp"
+        android:layout_width="fill_parent"
+        android:background="#F0F0F0"/>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:id="@+id/my_bank_card_record"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/my_image_4"
+            app:layout_marginLeftPercent="3%"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@mipmap/my_bank_card_record"/>
+        <TextView
+            android:layout_toRightOf = "@id/my_image_4"
+            app:layout_marginLeftPercent="3%"
+            android:textSize="16sp"
+            android:textColor="#0A0A0A"
+            android:text="银行卡记录管理"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:layout_marginTopPercent="15%"
+            app:layout_marginRightPercent="1%"
+            android:id="@+id/ic_my_back4"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/my_main_into"
+            android:layout_width="13dp"
+            android:layout_height="13dp" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <View
+        android:layout_height="4dp"
+        android:layout_width="fill_parent"
+        android:background="#F0F0F0"/>
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:id="@+id/my_friend_invitation"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/my_image_5"
+            app:layout_marginLeftPercent="3%"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@mipmap/my_friend_invitation"/>
+        <TextView
+            android:layout_toRightOf = "@id/my_image_5"
+            app:layout_marginLeftPercent="3%"
+            android:textSize="16sp"
+            android:textColor="#0A0A0A"
+            android:text="好友邀请"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="12sp"
+            app:layout_marginTopPercent="12%"
+            android:layout_toLeftOf="@id/ic_my_back5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"/>
+        <ImageView
+            app:layout_marginTopPercent="15%"
+            app:layout_marginRightPercent="1%"
+            android:id="@+id/ic_my_back5"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/my_main_into"
+            android:layout_width="13dp"
+            android:layout_height="13dp" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <View
+        android:layout_height="4dp"
+        android:layout_width="fill_parent"
+        android:background="#F0F0F0"/>
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:id="@+id/my_setting"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/my_image_6"
+            app:layout_marginLeftPercent="3%"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@mipmap/my_setting"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/my_image_6"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/my_image_6"
+            android:text="设置"
+            android:textColor="#0A0A0A"
+            android:textSize="16sp"
+            app:layout_marginLeftPercent="3%" />
+
+        <ImageView
+            app:layout_marginTopPercent="12%"
+            app:layout_marginRightPercent="1%"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/my_main_into"
+            android:layout_width="13dp"
+            android:layout_height="13dp" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

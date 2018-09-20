@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:orientation="vertical">
+    <com.zhy.android.percent.support.PercentLinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/banner_image"
+android:layout_gravity="center_vertical"
+        app:layout_marginLeftPercent="5%"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@mipmap/commend_message"/>
+    <TextView
+        android:id="@+id/banner_message"
+        app:layout_marginLeftPercent="3%"
+        android:layout_gravity="center_vertical"
+        android:textColor="#EE7942"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="邀请好友可以获得积分"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

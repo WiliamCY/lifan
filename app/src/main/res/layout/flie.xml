@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/file_logo"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+           android:layout_margin="15dp" />
+
+        <TextView
+            android:id="@+id/file_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/file_logo"
+            android:text="17返利"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:paddingTop="5dp"
+            android:id="@+id/file_messgae"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/file_title"
+            android:layout_toEndOf="@id/file_logo"
+            android:text="宁波旺信投资管理有限公司"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:background="@mipmap/jiangxi_bank"
+            android:layout_marginTop="8dp"
+            android:id="@+id/file_bank_logo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="75dp" />
+
+        <TextView
+            android:id="@+id/file_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="江西银行"
+            android:layout_marginTop="18dp"
+           android:layout_marginRight="15dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:paddingLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5">
+
+            <TextView
+                android:id="@+id/h1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="资金类型" />
+
+            <TextView
+                android:paddingLeft="4dp"
+                android:id="@+id/file_e1"
+                android:layout_toRightOf="@+id/h1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车贷，房贷" />
+
+            <TextView
+                android:paddingTop="5dp"
+                android:layout_below="@+id/h1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="实缴资本" />
+
+            <TextView
+                android:id="@+id/file_e3"
+              android:paddingTop="5dp"
+              android:paddingLeft="4dp"
+                android:layout_below="@+id/file_e1"
+                android:layout_toRightOf="@+id/h1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50000000元" />
+
+        </RelativeLayout>s
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#D3D3D3" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="3">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+
+            <TextView
+                android:paddingLeft="8dp"
+                android:id="@+id/h2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="项目期限" />
+
+            <TextView
+                android:textColor="#FFA54F  "
+               android:paddingLeft="80dp"
+                android:id="@+id/file_e2"
+                android:layout_toRightOf="@+id/h1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1月标/3月标" />
+
+            <TextView
+                android:paddingLeft="8dp"
+                android:paddingTop="5dp"
+                android:layout_below="@+id/h2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上线时间" />
+
+            <TextView
+                android:id="@+id/file_e4"
+                android:paddingTop="5dp"
+                android:paddingLeft="80dp"
+                android:layout_below="@+id/file_e2"
+                android:layout_toRightOf="@+id/h1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2015.7.12" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_height="8dp"
+        android:layout_width="match_parent"
+        android:background="#F2F2F2"/>
+</LinearLayout>

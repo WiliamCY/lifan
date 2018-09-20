@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/my_bank_toolbar"
+        layout="@layout/file_toolbar"/>
+    <View
+        android:layout_height="0.1dp"
+        android:layout_width="fill_parent"
+        android:background="#D3D3D3"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<TextView
+    android:paddingTop="10dp"
+    android:paddingLeft="15dp"
+    android:id="@+id/name"
+    android:textSize="20sp"
+    android:textColor="#0a0a0a"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="甬e贷"/>
+
+        <TextView
+            android:paddingLeft="10dp"
+        android:id="@+id/file_mian_h2"
+        android:layout_below="@id/name"
+        android:textSize="15sp"
+        android:textColor="#0a0a0a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="风控排名："/>
+
+        <TextView
+            android:layout_below="@id/name"
+            android:layout_toRightOf="@+id/file_mian_h2"
+            android:textSize="15sp"
+            android:textColor="#0a0a0a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="90"/>
+        <TextView
+            android:id="@+id/depository"
+            android:layout_margin="10dp"
+          android:layout_alignParentRight="true"
+            android:textSize="15sp"
+            android:textColor="#0a0a0a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="江西银行存管"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/my_file_layout_1"
+        android:paddingTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/apr"
+                android:textColor="#6495ED"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7.75%"
+                android:textSize="17sp"/>
+            <TextView
+                app:layout_marginTopPercent="1%"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="综合利率"/>
+        </LinearLayout>
+        <View
+            android:layout_width="1dip"
+            android:layout_height="50dp"
+            android:background="#D3D3D3"
+            android:layout_gravity="center_horizontal"
+            />
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/paid_money"
+                android:textColor="#6495ED"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8000万"
+                android:textSize="17sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="实缴资本"/>
+        </LinearLayout>
+        <View
+            android:layout_width="1dip"
+            android:layout_height="50dp"
+            android:background="#D3D3D3"
+            android:layout_gravity="center_horizontal"
+            />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/cridit_attorn"
+                android:textColor="#6495ED"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="随时"
+                android:textSize="17sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="债权转让"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+      android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+>
+        <TextView
+            android:paddingLeft="5dp"
+            android:id="@+id/my_file_lable_time"
+            android:text="标的期限："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/product_limit"
+            android:paddingLeft="5dp"
+             android:layout_toRightOf="@id/my_file_lable_time"
+            android:text="天标-12月以上"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:layout_below="@id/my_file_lable_time"
+            android:text="资产类型："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/asset_type"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:layout_below="@id/my_file_lable_time"
+            android:layout_toRightOf="@id/my_file_lable_time"
+            android:text="车贷/房贷/车贷"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:id="@+id/online_time"
+            android:paddingBottom="3dp"
+           android:paddingRight="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="2012.12.12上线"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:layout_height="5dp"
+        android:layout_width="fill_parent"
+        android:background="#D3D3D3"/>
+
+    <include
+        android:layout_below="@+id/my_view1"
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="230dp"
+        layout="@layout/file_gridview"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3"
+    android:orientation="vertical">
+    <TextView
+        android:paddingTop="5dp"
+       android:paddingLeft="10dp"
+        android:text="官网地址："
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/website"
+        android:paddingTop="3dp"
+     android:paddingLeft="10dp"
+        android:text="http://www.google.com"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+</LinearLayout>

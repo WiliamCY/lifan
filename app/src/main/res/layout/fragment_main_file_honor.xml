@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+   <include
+       android:layout_width="wrap_content"
+       android:layout_height="50dp"
+       android:id="@+id/file_main_honor_toolabr"
+       layout="@layout/file_toolbar"/>
+   <View
+       android:id="@+id/my_view1"
+       android:layout_height="0.1dp"
+       android:layout_width="fill_parent"
+       android:background="#D3D3D3"/>
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+   <LinearLayout
+         android:layout_margin="8dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+   <ImageView
+       android:layout_gravity="center"
+       android:layout_width="10dp"
+       android:layout_height="10dp"
+       android:background="@mipmap/file_mian_honor_background"/>
+      <TextView
+          android:textColor="#0A0A0A"
+          android:textSize="16sp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="风控评价："/>
+      </LinearLayout>
+   <TextView
+       android:id="@+id/control_evaluation"
+       android:layout_marginLeft="15dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="1.1971年10月29日出生于广东省汕头市（前汕头专区）潮南区成田镇家美社区家一村。\n
+       2.童年时，当时马化腾的父母在东方县（原属广东省，海南建省后划归海南省）工作，1984年13岁正在读初二时马化腾随家人从海南迁至深圳
+       。后就读于深圳大学计算机系计算机专业。\n
+       3.但他真正意义上的第一桶金是来自股市 [9]  。他最精彩的一单是将10万元炒到70万元。这为马化腾独立创业打下了基础 [10]  。\n
+"/>
+
+   <LinearLayout
+       android:layout_margin="8dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+      <ImageView
+          android:layout_gravity="center"
+          android:layout_width="10dp"
+          android:layout_height="10dp"
+          android:background="@mipmap/file_mian_honor_background"/>
+      <TextView
+          android:textColor="#0A0A0A"
+          android:textSize="16sp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="风投背景："/>
+   </LinearLayout>
+   <TextView
+       android:id="@+id/cast_background"
+    android:layout_marginLeft="15dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="1.1971年10月29日出生于广东省汕头市（前汕头专区）潮南区成田镇家美社区家一村。\n
+       2.童年时，当时马化腾的父母在东方县（原属广东省，海南建省后划归海南省）工作，1984年13岁正在读初二时马化腾随家人从海南迁至深圳
+       。后就读于深圳大学计算机系计算机专业。\n
+
+"/>
+
+   <LinearLayout
+       android:layout_margin="8dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+      <ImageView
+
+          android:layout_gravity="center"
+          android:layout_width="10dp"
+          android:layout_height="10dp"
+          android:background="@mipmap/file_mian_honor_background"/>
+      <TextView
+
+          android:textColor="#0A0A0A"
+          android:textSize="16sp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="加入协会："/>
+   </LinearLayout>
+   <TextView
+       android:id="@+id/join_association"
+       android:layout_marginLeft="15dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="1.1971年10月29日出生于广东省汕头市（前汕头专区）潮南区成田镇家美社区家一村。\n
+       2.童年时，当时马化腾的父母在东方县（原属广东省，海南建省后划归海南省）工作，1984年13岁正在读初二时马化腾随家人从海南迁至深圳
+       。后就读于深圳大学计算机系计算机专业。\n
+
+"/>
+</LinearLayout>
+   </ScrollView>
+</LinearLayout>

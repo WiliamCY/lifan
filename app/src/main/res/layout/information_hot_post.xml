@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/commend_h1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="陌上人如玉，公子世无双"
+            android:textColor="#0A0A0A"
+            android:textSize="17sp"
+            app:layout_marginBottomPercent="2%"
+            app:layout_marginTopPercent="4%"
+            app:layout_marginLeftPercent="4%"/>
+        <TextView
+            android:textSize="13sp"
+            android:layout_below="@+id/commend_h1"
+            android:id="@+id/commend_h2"
+            app:layout_marginLeftPercent="4%"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="青楼斜影疏，良人如初顾。纤手如玉脂，淡妆胜罗敷。纵有抱柱信，不能容世俗。君子世无双，陌上人如玉。不能同世生，但求同归土。"
+/>
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_alignParentBottom="true"
+            app:layout_marginBottomPercent="4%"
+            android:id="@+id/commentView1"
+            android:layout_below="@+id/commend_h2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+            app:layout_marginBottomPercent="4%"
+            app:layout_marginLeftPercent="4%"
+            android:layout_gravity="bottom"
+            android:id="@+id/comment_see_background"
+            android:background="@mipmap/comment_see_background"
+            android:layout_width="20dp"
+            android:layout_height="12dp" />
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/commend_h3"
+            android:layout_gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8888"/>
+        <TextView
+            android:textSize="12sp"
+            android:layout_gravity="bottom"
+            android:id="@+id/commend_h4"
+            app:layout_marginLeftPercent="10%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10小时以前"/>
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <ImageView
+            app:layout_marginRightPercent="15%"
+            app:layout_marginTopPercent="2%"
+            app:layout_marginLeftPercent="15%"
+            android:id="@+id/commend_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+       />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_below="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+     <View
+    android:layout_height="10dp"
+    android:layout_width="fill_parent"
+    android:background="#EAEAEA"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

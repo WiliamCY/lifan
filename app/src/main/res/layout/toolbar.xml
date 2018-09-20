@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolBarHeight"
+    android:background="#FFA500"
+    android:fitsSystemWindows="true"
+    android:paddingTop="@dimen/toolBarPaddingTop"
+    android:layout_marginBottom="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/toolbar_back"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10dp"
+        android:background="@mipmap/ic_back_white" />
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="提现"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/WiTitleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:text="自助交单"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+</android.support.v7.widget.Toolbar>

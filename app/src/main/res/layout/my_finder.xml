@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+    <View
+        android:id="@+id/my_view1"
+        android:layout_height="8dp"
+        android:layout_width="match_parent"
+        android:background="#DBDBDB"/>
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            app:layout_marginPercent="5%"
+            android:id="@+id/finder_name"
+            android:textColor="#0A0A0A"
+            android:textSize="17sp"
+            android:text="辉洛"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_gravity="center"
+            android:layout_below="@id/finder_name"
+            android:id="@+id/finder_pohone"
+            android:textSize="14sp"
+            android:text="136******7846"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+         <ImageView
+             android:id="@+id/finder_image"
+             app:layout_marginPercent="5%"
+             android:layout_gravity="center"
+             android:layout_below="@+id/finder_pohone"
+             android:layout_width="80dp"
+             android:layout_height="40dp" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_gravity="center"
+            app:layout_marginRightPercent="5%"
+            app:layout_marginTopPercent="15%"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+           <com.zhy.android.percent.support.PercentLinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:textSize="12dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="投资金额："/>
+               <TextView
+                   android:id="@+id/finderH1"
+                   android:textSize="12dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="5000.00元"/>
+           </com.zhy.android.percent.support.PercentLinearLayout>
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="返利金额："/>
+                <TextView
+                    android:id="@+id/finderH2"
+                    android:textSize="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="500.00元"/>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+            <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="邀请人得到的奖励："/>
+            <TextView
+                android:id="@+id/finderH3"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500.00元"/>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

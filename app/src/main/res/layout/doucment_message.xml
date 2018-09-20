@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:paddingLeft="2dp"
+        android:orientation="vertical"
+        android:layout_weight="0.7"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        tools:ignore="Suspicious0dp" >
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/time_1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@mipmap/document_time" />
+    <View
+
+        android:layout_gravity="center"
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:background="#D3D3D3"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="5dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical"
+        android:layout_weight="9"
+        android:layout_width="0dp"
+        android:layout_height="130dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <TextView
+                android:id="@+id/textsss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="提交时间" />
+
+            <TextView
+                android:id="@+id/document_h1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textsss"
+                android:layout_alignBottom="@+id/textsss"
+                android:layout_toEndOf="@+id/textsss"
+                android:paddingLeft="10dp"
+                android:text="2017.2.3.23 10:20" />
+
+            <TextView
+                android:id="@+id/docuemt_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/document_h1"
+                android:layout_alignBottom="@+id/document_h1"
+                android:layout_alignParentEnd="true"
+                android:text="删除" />
+        </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#ffffff"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp">
+                <ImageView
+                    android:id="@+id/doucment_image_1"
+                    android:layout_width="60dp"
+                    android:layout_height="80dp"
+                    />
+                <TextView
+                    android:id="@+id/document_h2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/doucment_image_1"
+                    android:text="17立返"
+                    android:textColor="#EE9A00"
+                    android:textSize="17sp"
+                    android:paddingLeft="8dp"
+                    />
+                <TextView
+                    android:paddingLeft="8dp"
+                    android:id="@+id/document_text_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/document_h2"
+                    android:layout_toRightOf="@id/doucment_image_1"
+                    android:text="投资金额"
+                    android:textColor="#0A0A0A"
+                  />
+                <TextView
+                    android:paddingLeft="8dp"
+                    android:id="@+id/documet_h3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/document_h2"
+                    android:layout_toRightOf="@id/document_text_1"
+                    android:text="50000000元"
+                    android:textColor="#0A0A0A"
+                    android:textSize="15sp"
+                 />
+
+
+                <TextView
+                    android:paddingLeft="8dp"
+                    android:id="@+id/document_text_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/document_text_1"
+                    android:layout_toRightOf="@id/doucment_image_1"
+                    android:text="投资时间"
+                    android:textColor="#0A0A0A"
+               />
+
+                <TextView
+                    android:paddingLeft="8dp"
+                    android:id="@+id/docuemt_h4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/documet_h3"
+                    android:layout_toRightOf="@id/document_text_1"
+                    android:text="2017.3.12"
+                    android:textColor="#0A0A0A"
+                  />
+            </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

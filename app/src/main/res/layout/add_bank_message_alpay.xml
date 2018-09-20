@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="8%w"
+        app:layout_marginLeftPercent="3%"
+        app:layout_marginRightPercent="3%"
+        app:layout_marginTopPercent="3%">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="账户"
+            android:textColor="#0A0A0A"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/alipy_message"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:background="@null"
+            android:hint="支付宝账户/手机号"
+            android:paddingLeft="9dp"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/edit_cursor_colors"
+            android:textSize="13sp" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#C2C2C2"
+        app:layout_marginLeftPercent="3%"
+        app:layout_marginRightPercent="3%" />
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="8%w"
+        app:layout_marginLeftPercent="3%"
+        app:layout_marginRightPercent="3%"
+        app:layout_marginTopPercent="1%">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="姓名"
+            android:textColor="#0A0A0A"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/alipay_name"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:background="@null"
+            android:hint="支付宝账号真实姓名"
+            android:paddingLeft="9dp"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/edit_cursor_colors"
+            android:textSize="13sp" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#C2C2C2"
+        app:layout_marginLeftPercent="3%"
+        app:layout_marginRightPercent="3%" />
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="8%w"
+        app:layout_marginLeftPercent="3%"
+        app:layout_marginRightPercent="3%"
+        app:layout_marginTopPercent="1%">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5.2"
+            android:text="手机号码"
+            android:textColor="#0A0A0A"
+            android:textSize="16sp" />
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/h4_alipy"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:background="@null"
+            android:hint="请输入手机号"
+            android:paddingLeft="9dp"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/edit_cursor_colors"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/getCode_alipy"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="点击获取"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#C2C2C2"
+        app:layout_marginLeftPercent="3%"
+        app:layout_marginRightPercent="3%"
+        app:layout_marginTopPercent="1%" />
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="8%w"
+        app:layout_marginLeftPercent="3%"
+        app:layout_marginRightPercent="3%"
+        app:layout_marginTopPercent="1%">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="请输入验证码"
+            android:textColor="#0A0A0A"
+            android:textSize="16sp" />
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/h5_alipy"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:background="@null"
+            android:hint="短信验证码"
+            android:paddingLeft="9dp"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/edit_cursor_colors"
+            android:textSize="13sp" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#C2C2C2"
+        app:layout_marginLeftPercent="3%"
+        app:layout_marginRightPercent="3%"
+        app:layout_marginTopPercent="1%" />
+    <Button
+        android:id="@+id/add_button_alipy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shapes"
+        android:text="确定"
+        android:textColor="#ffffff"
+        app:layout_marginLeftPercent="6%"
+        app:layout_marginRightPercent="6%"
+        app:layout_marginTopPercent="3%" />
+</com.zhy.android.percent.support.PercentLinearLayout>

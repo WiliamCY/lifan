@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:orientation="vertical">
+      <ImageView
+          android:id="@+id/pop_title"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:background="@mipmap/rebate_background_tb4"/>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+   <com.jcodecraeer.xrecyclerview.XRecyclerView
+       android:paddingBottom="30dp"
+       android:id="@+id/rebate_message_recyview"
+       android:layout_width="match_parent"
+       android:layout_height="240dp"/>
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        app:layout_marginTopPercent="2%"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="23%w"
+        android:background="@mipmap/rebate_tab4_background">
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:textSize="15sp"
+                app:layout_marginTopPercent="20%"
+                app:layout_marginLeftPercent="5%"
+                android:text="投资项目"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="15sp"
+                app:layout_marginTopPercent="12%"
+                app:layout_marginLeftPercent="5%"
+                android:text="投资实际投资金额"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_marginLeftPercent="17%"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/rebt_h1s"
+                android:textColor="#0A0A0A"
+                android:textSize="15sp"
+                app:layout_marginTopPercent="20%"
+                app:layout_marginLeftPercent="5%"
+                android:text="一月标"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/rebt_h2s"
+                android:textColor="#0A0A0A"
+                android:textSize="15sp"
+                app:layout_marginTopPercent="12%"
+                app:layout_marginLeftPercent="5%"
+                android:text="1000元"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

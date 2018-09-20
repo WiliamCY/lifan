@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="8dp"
+    android:paddingRight="10dp">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <View
+                android:id="@+id/view_1"
+                android:layout_width="1dip"
+                android:layout_height="10dp"
+                android:background="#D3D3D3"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:background="@mipmap/my_mian_timeasix_background"
+                android:layout_below="@id/view_1"
+                android:id="@+id/my_time_1"
+                android:gravity="center"
+                android:text="01"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+/>
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/my_time_check"
+                android:background="@mipmap/my_mian_timeasix_background"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+
+                />
+            <View
+                android:layout_below="@+id/my_time_1"
+                android:id="@+id/my_time_view2"
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="#D3D3D3"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <LinearLayout
+        android:layout_weight="9"
+        android:paddingBottom="8dp"
+        android:paddingTop="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:paddingRight="6dp"
+            android:orientation="vertical"
+            android:paddingBottom="8dp">
+            <!--<TextView-->
+            <!--android:id="@+id/tv_delete"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:paddingLeft="5dp"-->
+            <!--android:paddingRight="5dp"-->
+            <!--android:text="删除"-->
+            <!--android:textColor="@android:color/holo_red_dark"-->
+            <!--android:textSize="14sp"/>-->
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="04月08日 10:21"
+                android:textSize="12sp"/>
+            <TextView
+                android:paddingTop="2dp"
+                android:lines="1"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:alpha="0.85"
+                android:ellipsize="end"
+                android:text="内容"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:id="@+id/tv_expand_or_fold"
+                android:layout_gravity="bottom|right"
+                android:background="@mipmap/ic_down_black"
+                android:layout_width="17dp"
+                android:layout_height="17dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
